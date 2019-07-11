@@ -3,3 +3,6 @@
 
 # Executables
 *.exe
+
+# Compiled Object files
+*.obj
