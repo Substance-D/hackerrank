@@ -1,8 +1,10 @@
 import java.util.*;
 
-public class Java_Stdin_Stdout_1 {
+public class Java_Stdin_Stdout_1
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
         int b = scan.nextInt();
