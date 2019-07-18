@@ -1,9 +1,12 @@
+//Start of locked code by hackerrank
+
 import java.math.BigDecimal;
 import java.util.*;
-class Java_BigDecimal{
+class Java_BigDecimal
+{
+    public static void main(String []args)
+    {
 
-    public static void main(String []args){
-        //Input
         Scanner sc= new Scanner(System.in);
         int n=sc.nextInt();
         String []s=new String[n+2];
@@ -11,43 +14,50 @@ class Java_BigDecimal{
             s[i]=sc.next();
         }
       	sc.close();
-
-        Hashtable<BigDecimal, Integer> decimalLengths = new Hashtable<BigDecimal, Integer>();
-
+//End of locked code by hackerrank
+        /*
+        due to bizarre IO choice to make an array bigger than the amount of inputs I copied those decimalValues
+        into a new array sprime. then created an array of BigDecimal based on those values. So now there is an array of strings and an array of BigDecimal
+        in the same order.
+        */
         String[] sprime = new String[n];
         for(int i = 0; i < sprime.length; i++)
         {
             sprime[i] = s[i];
         }
-        s = sprime;
         BigDecimal[] decimalValues = new BigDecimal[n];
-        for(int j = 0; j < s.length; j++)
+        for(int j = 0; j < n; j++)
         {
-            decimalValues[j] = new BigDecimal(s[j]);
-            decimalLengths.put(decimalValues[j], s[j].length());
+            decimalValues[j] = new BigDecimal(sprime[j]);
         }
-        java.util.Arrays.sort(decimalValues, Collections.reverseOrder());
+        //Temporary BigDecimal and String declarations for bubble sort
+        BigDecimal tempBD;
+        String tempStr;
 
-        Integer f, r;
+        /*
+        The simplets way to solve this is to manually implement a bubble sort which sorts elements in descending order. This bubble sort is written to sort the BigDecimal array
+        which has a default comparator. Any swaps made to the BigDecimal array are mirrored in the string (sprime) array. Doing this maintains the strings in their correct format for
+        output.
+        */
         for(int k = 0; k < decimalValues.length; k++)
         {
-            f = decimalLengths.get(decimalValues[k]);
-            r = decimalValues[k].toString().length();
-            if(r != f)
+            for(int l = 0; l + 1< decimalValues.length - k; l++)
             {
-                if(r > f) s[k] = decimalValues[k].toString().substring(1);
-                else
+                if(decimalValues[l].compareTo(decimalValues[l+1]) < 0)
                 {
-                    s[k] = decimalValues[k].toString();
-                    while(s[k].length() < f) s[k] = "0" + s[k];
+                    tempBD = decimalValues[l];
+                    decimalValues[l] = decimalValues[l + 1];
+                    decimalValues[l + 1] = tempBD;
+
+                    tempStr = sprime[l];
+                    sprime[l] = sprime[l + 1];
+                    sprime[l + 1] = tempStr;
                 }
             }
-
-            else s[k] = decimalValues[k].toString();
         }
-
-
-        //Output
+        //Finally as the output is locked to print s it's a simple matter of setting s to be a copy of sprime
+        s = java.util.Arrays.copyOfRange(sprime, 0, n);
+        //Start of locked code by hackerrank
         for(int i=0;i<n;i++)
         {
             System.out.println(s[i]);
@@ -55,3 +65,4 @@ class Java_BigDecimal{
     }
 
 }
+//end of locked code by hackerrank
