@@ -1,14 +1,22 @@
-import java.util.*;
-import java.io.*;
+import java.util.Scanner;
 
 public class Datatypes
 {
     public static void main(String args[])
     {
+        //Read in number of test cases using stdio
         Scanner scan = new Scanner(System.in);
         int t = scan.nextInt();
         for(int i = 0; i < t; i++)
         {
+            /*
+            A simple try-catch block. If the value causes an exception when being read as a long this means either the numeric
+            value is too highe or isn't valid. Regardless it couldn't be stored in a long or any smaller non-floating point datatype
+            and therefore the catch statement prints "x can't be fitted anywhere"
+
+            if the value can be stored in a long then it's a simple matter of using some if statements to verify if the value is withing the min-max
+            range of the smaller sized datatypes.
+            */
             try
             {
                 long x = scan.nextLong();

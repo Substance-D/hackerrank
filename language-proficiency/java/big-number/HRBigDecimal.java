@@ -1,5 +1,4 @@
 //Start of code segment locked by HackerRank
-
 import java.math.BigDecimal;
 import java.util.*;
 class HRBigDecimal
