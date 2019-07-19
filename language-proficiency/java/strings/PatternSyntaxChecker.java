@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.regex.*;
 
-public class Pattern_Syntax_Checker
+public class PatternSyntaxChecker
 {
 	public static void main(String[] args){
         //SCan in int for amount of test cases using string parse to consume newline character

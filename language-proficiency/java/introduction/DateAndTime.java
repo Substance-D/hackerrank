@@ -1,3 +1,4 @@
+//Start of code segment locked by HackerRank
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -5,7 +6,7 @@ import java.text.*;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
-
+//End of code segment locked by HackerRank
 class Result
 {
     static List<String> days = Arrays.asList("SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY");
@@ -20,8 +21,8 @@ class Result
         return actualDayName;
     }
 }
-
-public class Java_Date_and_Time
+//Start of code segment locked by HackerRank
+public class DateAndTime
 {
     public static void main(String[] args) throws IOException
     {
@@ -45,3 +46,4 @@ public class Java_Date_and_Time
         bufferedWriter.close();
     }
 }
+//End of code segment locked by HackerRank

@@ -1,9 +1,10 @@
+//Start of code segment locked by HackerRank
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Java_Anagrams
+public class Anagrams
 {
-
+//End of code segment locked by HackerRank
     static boolean isAnagram(String a, String b)
     {
         char[] aLetters = a.toUpperCase().toCharArray();
@@ -22,7 +23,7 @@ public class Java_Anagrams
         else return false;
 
     }
-
+//Start of code segment locked by HackerRank
     public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);
@@ -33,3 +34,4 @@ public class Java_Anagrams
         System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
     }
 }
+//End of code segment locked by HackerRank

@@ -1,8 +1,8 @@
-//Start of locked code by hackerrank
+//Start of code segment locked by HackerRank
 
 import java.math.BigDecimal;
 import java.util.*;
-class Java_BigDecimal
+class HRBigDecimal
 {
     public static void main(String []args)
     {
@@ -14,7 +14,7 @@ class Java_BigDecimal
             s[i]=sc.next();
         }
       	sc.close();
-//End of locked code by hackerrank
+//End of code segment locked by HackerRank
         /*
         due to bizarre IO choice to make an array bigger than the amount of inputs I copied those decimalValues
         into a new array sprime. then created an array of BigDecimal based on those values. So now there is an array of strings and an array of BigDecimal
@@ -57,7 +57,7 @@ class Java_BigDecimal
         }
         //Finally as the output is locked to print s it's a simple matter of setting s to be a copy of sprime
         s = java.util.Arrays.copyOfRange(sprime, 0, n);
-        //Start of locked code by hackerrank
+//Start of code segment locked by HackerRank
         for(int i=0;i<n;i++)
         {
             System.out.println(s[i]);
@@ -65,4 +65,4 @@ class Java_BigDecimal
     }
 
 }
-//end of locked code by hackerrank
+//End of code segment locked by HackerRank

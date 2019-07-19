@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Java_End_of_File
+public class EndOfFile
 {
     public static void main(String args[])
     {

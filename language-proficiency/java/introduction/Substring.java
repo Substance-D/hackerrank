@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Java_Substring
+public class Substring
 {
     public static void main(String[] args)
     {

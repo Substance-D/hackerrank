@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Java_Stdin_Stdout_2 {
+public class StdinStdout2 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

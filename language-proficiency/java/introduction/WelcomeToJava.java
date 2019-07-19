@@ -1,4 +1,4 @@
-public class Welcome_To_Java
+public class WelcomeToJava
 {
     public static void main(String[] args)
     {

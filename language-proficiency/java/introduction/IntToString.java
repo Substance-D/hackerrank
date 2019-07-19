@@ -1,6 +1,7 @@
+//Start of code segment locked by HackerRank
 import java.util.*;
 import java.security.*;
-public class Solution {
+public class IntToString {
  public static void main(String[] args) {
 
   DoNotTerminate.forbidExit();
@@ -10,10 +11,11 @@ public class Solution {
    int n = in .nextInt();
    in.close();
    //String s=???; Complete this line below
+//End of code segment locked by HackerRank
    String s = Integer.toString(n);
-   //Write your code here
 
 
+//Start of code segment locked by HackerRank
    if (n == Integer.parseInt(s)) {
     System.out.println("Good job");
    } else {
@@ -45,3 +47,4 @@ class DoNotTerminate {
   System.setSecurityManager(securityManager);
  }
 }
+//End of code segment locked by HackerRank

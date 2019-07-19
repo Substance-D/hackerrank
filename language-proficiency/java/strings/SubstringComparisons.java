@@ -1,7 +1,9 @@
+//Start of code segment locked by HackerRank
 import java.util.Scanner;
 
-public class Java_Substring_Comparisons
+public class SubstringComparisons
 {
+//End of code segment locked by HackerRank
     public static String getSmallestAndLargest(String s, int k)
     {
         String smallest = "", largest = "", temp = "";
@@ -19,7 +21,7 @@ public class Java_Substring_Comparisons
 
         return smallest + "\n" + largest;
     }
-
+//Start of code segment locked by HackerRank
     public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);
@@ -30,3 +32,4 @@ public class Java_Substring_Comparisons
         System.out.println(getSmallestAndLargest(s, k));
     }
 }
+//End of code segment locked by HackerRank
