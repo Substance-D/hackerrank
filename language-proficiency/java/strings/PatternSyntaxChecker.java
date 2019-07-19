@@ -4,7 +4,7 @@ import java.util.regex.*;
 public class PatternSyntaxChecker
 {
 	public static void main(String[] args){
-        //SCan in int for amount of test cases using string parse to consume newline character
+        //Scan in int for amount of test cases using string parse to consume newline character
 		Scanner scan = new Scanner(System.in);
 		int testCases = Integer.parseInt(scan.nextLine());
         //loop for handling each testcase

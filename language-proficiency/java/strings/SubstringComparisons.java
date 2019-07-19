@@ -6,6 +6,7 @@ public class SubstringComparisons
 //End of code segment locked by HackerRank
     public static String getSmallestAndLargest(String s, int k)
     {
+        //Create Strings for the largest and smalletst substrings, also a temporary string which will be used
         String smallest = "", largest = "", temp = "";
         for(int i = 0; i + k <= s.length(); i++)
         {
