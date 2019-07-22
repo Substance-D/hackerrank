@@ -15,7 +15,7 @@ class Bird extends Animal{
 	void fly(){
 		System.out.println("I am flying");
 	}
-    //simply add an identical method to fly called sing and edit the pritn accordingly
+    //Simply add an identical method to fly called sing and edit the pritn accordingly
     void sing(){
         System.out.println("I am singing");
     }
