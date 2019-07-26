@@ -10,11 +10,12 @@ Any solutions for questions beginning with non-valid program names will also be 
 Solutions do contain some modification in locked areas however none of these change the solutions much. Some are simply renaming the class rather than call them all Solution as this would prevent them compiling outside of the HackerRank environment. Also some formatting modification e.g. opening curly braces on a newline instead of the same line or removing "your code here" type comments
 
 Sometimes import statements are added or removed though generally none are removed from locked sections. Any added import statements can all be easily written in the code instead as needed e.g.
-
+```shell
 import java.util.Arrays;
 
 Arrays.sort(...)
-
+```
 Can be replaced with
-
+```shell
 java.util.Arrays.sort(...)
+```
