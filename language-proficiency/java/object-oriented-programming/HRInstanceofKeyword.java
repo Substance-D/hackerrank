@@ -19,7 +19,7 @@ public class HRInstanceofKeyword
             Object element=mylist.get(i);
             /*
             All lines are the same, element is an object. Use the "instanceof" keyword
-            to checl which type of object element is. Increment accordingly.
+            to check which type of object element is. Increment accordingly.
             */
             if(element instanceof Student) a++;
             if(element instanceof Rockstar) b++;
