@@ -1,5 +1,8 @@
-import java.util.*;
+/*
+The code isn't locked but can be left as is as only three lines need to be lightly modified
+*/
 
+import java.util.*;
 
 class Student{}
 class Rockstar{}
@@ -14,6 +17,10 @@ public class HRInstanceofKeyword
         for(int i = 0; i < mylist.size(); i++)
         {
             Object element=mylist.get(i);
+            /*
+            All lines are the same, element is an object. Use the "instanceof" keyword
+            to checl which type of object element is. Increment accordingly.
+            */
             if(element instanceof Student) a++;
             if(element instanceof Rockstar) b++;
             if(element instanceof Hacker) c++;
