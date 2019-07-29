@@ -36,7 +36,7 @@ that needs to be done is copy pasting the method from the Sports class and chang
 //Start of code segment locked by HackerRank
 }
 
-public class HRMethod_Overriding
+public class HRMethodOverriding
 {
 
     public static void main(String []args)
