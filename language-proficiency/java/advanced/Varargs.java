@@ -1,25 +1,38 @@
+//Start of code segment locked by HackerRank
 import java.io.*;
 import java.lang.reflect.*;
 import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
+//End of code segment locked by HackerRank
 
+/*
+The code is fairly simple and is just to introduce the varargs concept. This allows a single
+method to take multiple paramters without overloading. For example a calculator's add function
+should be able to add many integers without having to have endless overloading for each
+amount of operands.
+*/
 class Add
 {
+    //Method prints not returns results. Parameters are how dynamic amount of integer inputs are handled.
     public void add(int ... args)
     {
+        //String and in to store sum as well as print out equation
         String str = "";
         int sum = 0;
+        //How to iterate over all inputs
         for(int x: args)
         {
+            //Add sum of all inputs and appends values to a String for the equation.
             sum += x;
             str += x + "+";
         }
+        //Printing a substring of str that cuts off the final "+" before appending "=" and the result
         System.out.println(str.substring(0,str.length()-1)  + "=" + sum);
     }
 }
-
+//Start of code segment locked by HackerRank
 public class Varargs
 {
     public static void main(String[] args)
@@ -63,3 +76,4 @@ public class Varargs
         }
     }
 }
+//End of code segment locked by HackerRank
